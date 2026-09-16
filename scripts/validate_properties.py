@@ -1,3 +1,5 @@
+#Validates the property dataset for missing values, duplicate IDs, invalid prices, and property status.
+
 import pandas as pd
 
 FILE_PATH = "data/properties.csv"

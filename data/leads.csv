@@ -1,3 +1,5 @@
+#Contains sample customer inquiries used for lead qualification and property matching.
+
 lead_id,name,email,inquiry
 L001,Aarav Sharma,aarav.sharma@example.com,"Hi, I'm looking for a 2BHK in Gangapur Road or Anandvalli. My budget is around 65 lakh and I want to buy within the next 2 months."
 L002,Priya Patil,priya.patil@example.com,"I need a 3BHK apartment near College Road. Budget is up to 90L. Planning to purchase within 3 to 4 months."

@@ -1,3 +1,5 @@
+#Contains the property listings used by the lead-to-property matching system.
+
 property_id,location,property_type,bedrooms,price_lakh,area_sqft,status,description
 P001,Gangapur Road,Apartment,2,58,980,Available,"Modern 2BHK apartment on Gangapur Road with good connectivity to schools, hospitals, restaurants and the city center."
 P002,College Road,Apartment,2,65,1050,Available,"Spacious 2BHK apartment on College Road in a well-established residential area close to schools, cafes and shopping."
