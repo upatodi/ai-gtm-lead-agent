@@ -1,8 +1,8 @@
-# Implements deterministic business rules to calculate lead scores, priorities, and scoring reasons
-
+#Implements deterministic business rules to calculate lead scores, priorities, and scoring reasons"""
 def calculate_lead_score(
     timeline_months=None,
     has_budget=False,
+    budget_max_lakh=None,
     has_location=False,
     has_property_requirement=False,
     wants_to_visit=False,
@@ -17,13 +17,20 @@ def calculate_lead_score(
             reasons.append("Purchase expected within 1 month")
         elif timeline_months <= 3:
             score += 30
-            reasons.append("Purchase expected within 3 months")
+            reasons.append(
+            f"Purchase expected within {timeline_months:g} months"
+        )
         elif timeline_months <= 6:
             score += 20
-            reasons.append("Purchase expected within 6 months")
+            reasons.append(
+            f"Purchase expected within {timeline_months:g} months"
+        )
+
         elif timeline_months <= 12:
             score += 5
-            reasons.append("Purchase expected within 7-12 months")
+            reasons.append(
+            f"Purchase expected within {timeline_months:g} months"
+        )
         else:
             reasons.append("Purchase expected after 12 months")
 

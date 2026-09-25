@@ -1,11 +1,11 @@
 lead_id,name,email,lead_score,priority,reasons
-L001,Aarav Sharma,aarav.sharma@example.com,80,HIGH,Purchase expected within 3 months; Budget provided; Specific location provided; Specific property requirement provided
-L002,Priya Patil,priya.patil@example.com,70,MEDIUM,Purchase expected within 6 months; Budget provided; Specific location provided; Specific property requirement provided
-L003,Rohan Deshmukh,rohan.deshmukh@example.com,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
+L001,Aarav Sharma,aarav.sharma@example.com,80,HIGH,Purchase expected within 2 months; Budget provided; Specific location provided; Specific property requirement provided
+L002,Priya Patil,priya.patil@example.com,70,MEDIUM,Purchase expected within 4 months; Budget provided; Specific location provided; Specific property requirement provided
+L003,Rohan Deshmukh,rohan.deshmukh@example.com,70,MEDIUM,Purchase expected within 6 months; Budget provided; Specific location provided; Specific property requirement provided
 L004,Neha Kulkarni,neha.kulkarni@example.com,85,HIGH,Purchase expected within 1 month; Budget provided; Specific location provided; Specific property requirement provided
-L005,Vivek Joshi,vivek.joshi@example.com,30,LOW,Specific location provided; Specific property requirement provided
+L005,Vivek Joshi,vivek.joshi@example.com,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
 L006,Sneha More,sneha.more@example.com,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
-L007,Aditya Shah,aditya.shah@example.com,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
-L008,Kavya Mehta,kavya.mehta@example.com,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
+L007,Aditya Shah,aditya.shah@example.com,80,HIGH,Purchase expected within 1.5 months; Budget provided; Specific location provided; Specific property requirement provided
+L008,Kavya Mehta,kavya.mehta@example.com,55,MEDIUM,Purchase expected within 12 months; Budget provided; Specific location provided; Specific property requirement provided
 L009,Manish Gupta,manish.gupta@example.com,65,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided; Lead wants to visit or finalize quickly
 L010,Isha Desai,isha.desai@example.com,80,HIGH,Purchase expected within 3 months; Budget provided; Specific location provided; Specific property requirement provided

@@ -13,14 +13,55 @@ def extract_lead_signals(inquiry):
     """
 
     inquiry_lower = inquiry.lower()
+
     timeline_months = None
 
-    timeline_match = re.search(r"(\d+)\s*months?", inquiry_lower)
+    timeline_month_match = re.search(
+        r"(\d+)\s*months?",
+        inquiry_lower
+    )
 
-    if timeline_match:
-        timeline_months = int(timeline_match.group(1))
+    timeline_week_match = re.search(
+        r"(\d+)\s*weeks?",
+        inquiry_lower
+    )
 
-    has_budget = "budget" in inquiry_lower or "lakh" in inquiry_lower
+    if timeline_month_match:
+        timeline_months = int(timeline_month_match.group(1))
+
+    elif timeline_week_match:
+        weeks = int(timeline_week_match.group(1))
+        timeline_months = round(weeks / 4, 1)
+
+    elif "later this year" in inquiry_lower:
+        timeline_months = 6
+
+    elif "another year" in inquiry_lower:
+        timeline_months = 12
+
+    budget_max_lakh = None
+
+    crore_match = re.search(
+        r"(\d+(?:\.\d+)?)\s*(?:crore|cr)",
+        inquiry_lower
+    )
+
+    lakh_match = re.search(
+        r"(\d+(?:\.\d+)?)(?:\s*-\s*(\d+(?:\.\d+)?))?\s*(?:lakh|lakhs|l)",
+        inquiry_lower
+    )
+
+    if crore_match:
+        budget_max_lakh = float(crore_match.group(1)) * 100
+
+    elif lakh_match:
+        if lakh_match.group(2):
+            budget_max_lakh = float(lakh_match.group(2))
+        else:
+            budget_max_lakh = float(lakh_match.group(1))
+
+    has_budget = budget_max_lakh is not None
+
     has_location = any(
         location in inquiry_lower
         for location in [
@@ -47,7 +88,8 @@ def extract_lead_signals(inquiry):
 
     return {
         "timeline_months": timeline_months,
-        "has_budget": has_budget,
+        "budget_max_lakh": budget_max_lakh,
+        "has_budget": budget_max_lakh is not None,
         "has_location": has_location,
         "has_property_requirement": has_property_requirement,
         "wants_to_visit": wants_to_visit,
