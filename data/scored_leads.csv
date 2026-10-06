@@ -1,11 +1,11 @@
-lead_id,name,email,lead_score,priority,reasons
-L001,Aarav Sharma,aarav.sharma@example.com,80,HIGH,Purchase expected within 2 months; Budget provided; Specific location provided; Specific property requirement provided
-L002,Priya Patil,priya.patil@example.com,70,MEDIUM,Purchase expected within 4 months; Budget provided; Specific location provided; Specific property requirement provided
-L003,Rohan Deshmukh,rohan.deshmukh@example.com,70,MEDIUM,Purchase expected within 6 months; Budget provided; Specific location provided; Specific property requirement provided
-L004,Neha Kulkarni,neha.kulkarni@example.com,85,HIGH,Purchase expected within 1 month; Budget provided; Specific location provided; Specific property requirement provided
-L005,Vivek Joshi,vivek.joshi@example.com,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
-L006,Sneha More,sneha.more@example.com,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
-L007,Aditya Shah,aditya.shah@example.com,80,HIGH,Purchase expected within 1.5 months; Budget provided; Specific location provided; Specific property requirement provided
-L008,Kavya Mehta,kavya.mehta@example.com,55,MEDIUM,Purchase expected within 12 months; Budget provided; Specific location provided; Specific property requirement provided
-L009,Manish Gupta,manish.gupta@example.com,65,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided; Lead wants to visit or finalize quickly
-L010,Isha Desai,isha.desai@example.com,80,HIGH,Purchase expected within 3 months; Budget provided; Specific location provided; Specific property requirement provided
+lead_id,name,email,timeline_months,budget_max_lakh,bedrooms,property_type,lead_score,priority,reasons
+L001,Aarav Sharma,aarav.sharma@example.com,2.0,65.0,2.0,,80,HIGH,Purchase expected within 2 months; Budget provided; Specific location provided; Specific property requirement provided
+L002,Priya Patil,priya.patil@example.com,4.0,90.0,3.0,apartment,70,MEDIUM,Purchase expected within 4 months; Budget provided; Specific location provided; Specific property requirement provided
+L003,Rohan Deshmukh,rohan.deshmukh@example.com,6.0,40.0,1.0,,70,MEDIUM,Purchase expected within 6 months; Budget provided; Specific location provided; Specific property requirement provided
+L004,Neha Kulkarni,neha.kulkarni@example.com,1.0,80.0,3.0,,85,HIGH,Purchase expected within 1 month; Budget provided; Specific location provided; Specific property requirement provided
+L005,Vivek Joshi,vivek.joshi@example.com,,60.0,2.0,,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
+L006,Sneha More,sneha.more@example.com,,100.0,,villa,50,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided
+L007,Aditya Shah,aditya.shah@example.com,1.5,55.0,2.0,apartment,80,HIGH,Purchase expected within 1.5 months; Budget provided; Specific location provided; Specific property requirement provided
+L008,Kavya Mehta,kavya.mehta@example.com,12.0,85.0,3.0,,55,MEDIUM,Purchase expected within 12 months; Budget provided; Specific location provided; Specific property requirement provided
+L009,Manish Gupta,manish.gupta@example.com,,70.0,2.0,,65,MEDIUM,Budget provided; Specific location provided; Specific property requirement provided; Lead wants to visit or finalize quickly
+L010,Isha Desai,isha.desai@example.com,3.0,130.0,4.0,villa,80,HIGH,Purchase expected within 3 months; Budget provided; Specific location provided; Specific property requirement provided

@@ -5,6 +5,8 @@ def calculate_lead_score(
     budget_max_lakh=None,
     has_location=False,
     has_property_requirement=False,
+    bedrooms=None,
+    property_type=None,
     wants_to_visit=False,
 ):
     score = 0

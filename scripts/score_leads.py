@@ -62,6 +62,24 @@ def extract_lead_signals(inquiry):
 
     has_budget = budget_max_lakh is not None
 
+    bedroom_match = re.search(
+        r"(\d+)\s*bhk",
+        inquiry_lower
+    )
+
+    bedrooms = None
+
+    if bedroom_match:
+        bedrooms = int(bedroom_match.group(1))
+
+    property_type = None
+
+    if "villa" in inquiry_lower:
+        property_type = "villa"
+
+    elif "apartment" in inquiry_lower:
+        property_type = "apartment"
+
     has_location = any(
         location in inquiry_lower
         for location in [
@@ -92,6 +110,8 @@ def extract_lead_signals(inquiry):
         "has_budget": budget_max_lakh is not None,
         "has_location": has_location,
         "has_property_requirement": has_property_requirement,
+        "bedrooms": bedrooms,
+        "property_type": property_type,
         "wants_to_visit": wants_to_visit,
     }
 
@@ -111,10 +131,15 @@ for _, lead in leads_df.iterrows():
     signals = extract_lead_signals(inquiry)
 
     score = calculate_lead_score(**signals)
+
     scored_leads.append({
     "lead_id": lead["lead_id"],
     "name": lead["name"],
     "email": lead["email"],
+    "timeline_months": signals["timeline_months"],
+    "budget_max_lakh": signals["budget_max_lakh"],
+    "bedrooms": signals["bedrooms"],
+    "property_type": signals["property_type"],
     "lead_score": score["lead_score"],
     "priority": score["priority"],
     "reasons": "; ".join(score["reasons"]),
