@@ -1,0 +1,11 @@
+lead_id,bedrooms,property_type,locations,budget_max_lakh,timeline_months,wants_to_visit,status
+L001,2,,Gangapur Road; Anandvalli,65.0,2.0,False,success
+L002,3,apartment,College Road,90.0,3.5,False,success
+L003,1,,Nashik Road,40.0,6.0,False,success
+L004,3,,Indira Nagar,80.0,1.0,False,success
+L005,2,,Pathardi Phata,60.0,3.5,False,success
+L006,3,villa,Deolali; Gangapur Road,100.0,,False,success
+L007,2,apartment,Satpur,55.0,6.0,True,success
+L008,3,,Anandvalli; Gangapur Road,85.0,12.0,False,success
+L009,2,,College Road,70.0,1.5,True,success
+L010,4,villa,Deolali,130.0,3.5,False,success
